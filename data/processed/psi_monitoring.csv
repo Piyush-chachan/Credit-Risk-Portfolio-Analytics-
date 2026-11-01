@@ -1,0 +1,12 @@
+item,type,PSI,status
+Avg DPD (12m),feature,0.006419066188912788,Stable
+Model score (PD),score,0.004743778574612138,Stable
+EMI-to-income,feature,0.003200406134925837,Stable
+Delinquent months (late+missed),feature,0.002692465981274004,Stable
+Interest rate,feature,0.002137773049413082,Stable
+Age,feature,0.0017860513444973329,Stable
+Loan-to-income,feature,0.0015678568557984476,Stable
+Bureau avg DPD,feature,0.0010007055483942278,Stable
+Loan amount,feature,0.0009160297608509619,Stable
+Annual income,feature,0.0008991013104525101,Stable
+Written-off bureau lines,feature,1.580707365253441e-05,Stable

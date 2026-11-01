@@ -1,0 +1,12 @@
+{
+ "built_utc": "2026-10-31T10:23:13+00:00",
+ "accounts": 14685,
+ "anomaly_lift": {
+  "flagged_accounts": 809,
+  "flag_rate": 0.05509022812393599,
+  "default_rate_flagged": 0.2484548825710754,
+  "default_rate_unflagged": 0.15588065724992795,
+  "lift": 1.593878849078244
+ },
+ "seconds": 43.2
+}

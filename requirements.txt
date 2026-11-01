@@ -1,0 +1,14 @@
+# Tested on Python 3.12. Direct dependencies pinned to exact versions.
+streamlit==1.39.0
+pandas==2.2.3
+numpy==2.1.3
+scikit-learn==1.5.2
+lightgbm==4.5.0
+duckdb==1.1.3
+plotly==5.24.1
+openai==1.54.4
+httpx==0.27.2        # REQUIRED: openai 1.54.4 crashes ("unexpected keyword 'proxies'") with httpx >= 0.28
+python-dotenv==1.0.1
+joblib==1.4.2
+reportlab==4.2.5
+pytest==8.3.3

@@ -1,0 +1,59 @@
+{
+ "champion": "Logistic Regression",
+ "n_accounts": 14685,
+ "n_customers": 10000,
+ "default_rate": 0.1609805924412666,
+ "cv": "5-fold StratifiedGroupKFold by customer_id (pooled out-of-fold)",
+ "Logistic Regression": {
+  "AUC": 0.6800344040020265,
+  "AUC_CI95": [
+   0.668993253989084,
+   0.6919371684885558
+  ],
+  "KS": 0.27030673148110385,
+  "Gini": 0.36006880800405305,
+  "fold_auc_mean": 0.6807934729654723,
+  "fold_auc_std": 0.009865680605134444
+ },
+ "LightGBM": {
+  "AUC": 0.6772541165119021,
+  "AUC_CI95": [
+   0.6671264855363072,
+   0.6896554419062694
+  ],
+  "KS": 0.2593874228186205,
+  "Gini": 0.3545082330238043
+ },
+ "out_of_time": {
+  "train_rows": 9764,
+  "test_rows": 4921,
+  "split": "train <= 2021, test > 2021",
+  "Logistic Regression": {
+   "AUC": 0.6889584455631304,
+   "AUC_CI95": [
+    0.6707420141811327,
+    0.7087972248472235
+   ],
+   "KS": 0.2840989727490572,
+   "Gini": 0.3779168911262607
+  },
+  "LightGBM": {
+   "AUC": 0.6882401748617638,
+   "AUC_CI95": [
+    0.6671176050565057,
+    0.7068737403574641
+   ],
+   "KS": 0.29568077820915306,
+   "Gini": 0.3764803497235276
+  }
+ },
+ "early_window_auc_lr": 0.6734011415723585,
+ "final_features_numeric": 32,
+ "final_features_categorical": 3,
+ "segment_thresholds": [
+  0.12183002493047097,
+  0.18058036429125482,
+  0.27418860479691953
+ ],
+ "selection_rule": "ML challenger promoted only if AUC gain > 0.005 over the logistic baseline"
+}

@@ -1,0 +1,6 @@
+feature_set,n_numeric_features,AUC_LR,KS_LR
+Origination only (customer + loan),12,0.6540886819045689,0.23623465693708529
++ Bureau,22,0.6620002496665962,0.2390934630610855
++ Bureau + Repayment months 1-12  (FINAL),32,0.6800344040020265,0.27030673148110385
+Early-window: Repayment months 1-6 only,25,0.6734011415723585,0.2546833086344679
+FINAL + Collections (excluded: post-delinquency),34,0.6800108861777129,0.2693279436659873

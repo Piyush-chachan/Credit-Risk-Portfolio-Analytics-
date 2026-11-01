@@ -1,0 +1,71 @@
+[
+ {
+  "id": "mortgage_concentration",
+  "cross_dimensional": false,
+  "dimension": "loan type x exposure",
+  "headline": "Mortgages are 9.8% of accounts but 52% of exposure, and default most",
+  "evidence": "Mortgage default rate 24.7% (n=1,432) vs 16.1% portfolio; 65% of all defaulted exposure ($82.6M of $126.9M). Value-weighted default rate is 21.1% against 16.1% by count.",
+  "so_what": "Headline default rate understates dollar risk. Mortgage underwriting, LTV limits and early-arrears monitoring are the highest-leverage controls; report the exposure-weighted rate alongside the count-based one.",
+  "numbers": {
+   "mortgage_default_rate": 0.24650837988826815,
+   "mortgage_exposure_share": 0.5231467865002477,
+   "mortgage_account_share": 0.09751447054817841,
+   "share_defaulted_exposure": 0.6504576062416042
+  }
+ },
+ {
+  "id": "employment_income",
+  "cross_dimensional": true,
+  "dimension": "employment type x income band",
+  "headline": "Unemployed borrowers default at 35%, and low income compounds it",
+  "evidence": "Unemployed: 35.0% (n=718, 4.9% of accounts). Income <40k: unemployed 41.7% (n=350) vs salaried 23.9% (n=314); 40-60k: 31.0% (n=197) vs 21.2% (n=1061). Across all employment, <40k income defaults at 32.4% vs 9.5% at 100k+.",
+  "so_what": "Employment status adds risk on top of income, so an income-only cut-off misses it. Consider a stricter policy (co-borrower, lower limit, collateral) for unemployed applicants rather than a flat income threshold.",
+  "numbers": {
+   "unemployed_rate": 0.34958217270194986,
+   "unemployed_n": 718,
+   "low_income_unemployed": 0.41714285714285715,
+   "low_income_salaried": 0.23885350318471338,
+   "income_lt40k_rate": 0.32441113490364026,
+   "income_100k_rate": 0.09522272433828276
+  }
+ },
+ {
+  "id": "delinquency_ladder",
+  "cross_dimensional": false,
+  "dimension": "repayment behaviour",
+  "headline": "Delinquency is a steep early-warning ladder: 8% -> 29% default",
+  "evidence": "0 late/missed months: 8.1% (n=2,153); 1: 12.4%; 2-3: 17.1%; 4+: 28.7% (n=2,043, 13.9% of accounts). Already by months 1-6, 2+ delinquent months means 23.2% vs 13.7%.",
+  "so_what": "Risk is visible within six months of origination. Trigger collections outreach after the second delinquent month instead of waiting for deep arrears; this is also the basis of the dashboard's anomaly review queue.",
+  "numbers": {
+   "zero_delq_rate": 0.08081746400371574,
+   "four_plus_rate": 0.2873225648556045,
+   "four_plus_share": 0.13912155260469866
+  }
+ },
+ {
+  "id": "bureau_writeoff",
+  "cross_dimensional": true,
+  "dimension": "loan type x bureau profile",
+  "headline": "A written-off line elsewhere lifts default from 14.6% to 18.7%, most on Business Loans",
+  "evidence": "29% of accounts (n=4,279) belong to customers with a written-off bureau line. Largest gap on Business Loan: 20.2% vs 14.5%. Thin-file customers: 17.6% (n=1,462).",
+  "so_what": "External write-offs are a cheap, reliable screen that should tighten limits or pricing, especially on unsecured business and card lending; thin-file customers sit above average and deserve manual review rather than a default 'clean' assumption.",
+  "numbers": {
+   "writeoff_rate": 0.18719326945548026,
+   "no_writeoff_rate": 0.14590787119856888,
+   "top_loan_type": "Business Loan"
+  }
+ },
+ {
+  "id": "geography_vs_age",
+  "cross_dimensional": false,
+  "dimension": "region / channel vs age",
+  "headline": "Geography and channel barely move risk; age and income do",
+  "evidence": "Region range 15.0%-16.9%, city tier 15.5%-16.4%, channel 15.4%-16.9%. By age: <30 defaults at 21.6% (n=3,250) vs 13.8% for 40-49 and 6.8% for 60+ (n=368).",
+  "so_what": "Regional or channel tightening would cost volume without reducing risk. Focus policy on borrower attributes (income, employment, bureau history) and product mix. Treat age as a monitoring variable only, subject to fair-lending review.",
+  "numbers": {
+   "region_spread_pp": 1.865432632286565,
+   "channel_spread_pp": 1.4965273485658153,
+   "under30_rate": 0.21569230769230768
+  }
+ }
+]
